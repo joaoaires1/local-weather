@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.show {
+    text-align: center;
+}
+.cidade {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 16px 0;
+}
+
+.icon {
+    padding: 22px 0;
+}
+
+.icon i {
+    font-size: 120px;
+}
+
+.descricao {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.temperatura {
+    position: relative;
+    display: block;
+    padding: 24px 0;
+    font-size: 170px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+.temperatura::after {
+    content: " º ";
+    font-size: 100px;
+    position: absolute;
+    margin-top: 16px;
+}
+
+.show{
+    width: 100%;
+    height: 100vh;
+    background: seagreen;
+    color: aliceblue;
+}
+
+@media (min-width: 576px) {
+    .box {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .show {
+        max-width: 360px;
+        max-height: 500px;
+    }
+}
